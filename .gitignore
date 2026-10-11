@@ -1,0 +1,18 @@
+# Dataset de la competencia (no se sube): va en data/competencia_01.csv
+data/
+
+# Salidas de las corridas: base de Optuna, modelos, probabilidades, entregas
+exp/
+
+# Notebook ejecutada localmente
+*_ejecutada.ipynb
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
