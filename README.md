@@ -2,8 +2,7 @@
 
 DMEyF — Florencia Montagna
 
-Entrega final: [`resultados/entrega_final_202108.csv`](resultados/entrega_final_202108.csv), 11.036 clientes
-(ganancia pública **101,12**).
+Entrega final: 11.036 clientes (ganancia pública **101,12**).
 
 ## Cómo replicar la entrega final
 
@@ -11,7 +10,6 @@ Entrega final: [`resultados/entrega_final_202108.csv`](resultados/entrega_final_
 |---|---|
 | `prediccion_bajas_202108.ipynb` | Todo el proceso, desde el CSV de la competencia hasta el archivo de entrega |
 | `orden_filas.csv.gz` | Orden de las filas de la corrida original (ver abajo) |
-| `resultados/entrega_final_202108.csv` | El archivo que se entregó, para comparar |
 
 1. Copiar el dataset de la competencia a `data/competencia_01.csv` (al lado de la notebook).
 2. Correr la notebook completa (~5 h en una PC de 8 núcleos y 8 GB de RAM). Por ejemplo:
@@ -19,7 +17,7 @@ Entrega final: [`resultados/entrega_final_202108.csv`](resultados/entrega_final_
    jupyter nbconvert --to notebook --execute prediccion_bajas_202108.ipynb --output prediccion_bajas_202108_ejecutada.ipynb --ExecutePreprocessor.timeout=-1
    ```
    En Google Colab: subir `competencia_01.csv` a `MyDrive/dmeyf/data/` y `orden_filas.csv.gz` a `MyDrive/dmeyf/`.
-3. La entrega queda en `exp/final_202108/entrega01_202108.csv` y es idéntica a `resultados/entrega_final_202108.csv`.
+3. La entrega queda en `exp/final_202108/entrega01_202108.csv` y es idéntica al archivo entregado.
 
 Versiones usadas: Python 3.13, numpy 2.4.3, pandas 3.0.1, pyarrow 25.0.1, duckdb 1.5.5, lightgbm 4.7.0,
 optuna 4.9.0, scikit-learn 1.9.0. Semilla primigenia: 14072024.
